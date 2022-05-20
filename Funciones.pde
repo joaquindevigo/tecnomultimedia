@@ -163,5 +163,11 @@ void creditosInicio() {
   if (frameCount > 2160 && frameCount <= 2220) {
     apareceTexto();
     texto34();
+  } else
+  {
+   if (frameCount > 2220) {
+     //REINICIO
+     start=false;
+   }
   }
 }
