@@ -1,4 +1,7 @@
 /*
+  video explicacion:
+  https://www.youtube.com/watch?v=lu4YBEN6tLg
+  
   ARRANQUE: CLICK DEL MOUSE
   APAGADO: CLICK DEL MOUSE
            
