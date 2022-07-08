@@ -97,11 +97,13 @@ void pantallaPerdiste() {
 void pantallaFinalDeTiempo() {
   background(0, 12, 37);
   fill(255);
-  textSize(40);
+  textSize(10);
   textAlign(CENTER, CENTER);
+  text ("CREDITOS\nRealizado por: Joaquin De Vigo Urcos\nCOMISION 2°\nTecnologia Multimedial", width/2, 60);
+  textSize(40);
   text("¡SE TE ACABO\nEL TIEMPO!", width/2, height/2);
   textSize(20);
-  text("Tu puntaje fue: "+ puntos, width/2, 40);
+  text("Tu puntaje fue: "+ puntos, width/2, 180);
   textSize(15);
   text("PULSA ENTER\nPARA REINICIAR EL JUEGO", width/2, 430);
 }
