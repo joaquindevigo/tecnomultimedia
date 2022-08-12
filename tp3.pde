@@ -10,19 +10,18 @@ int cant=10;
 int puntos, missClick;
 int tiempo;
 boolean inicioConteo, ERROR;
-int puntosActual;
 PFont fuenteJuego;
 
 void setup() {
   size (600, 600);
-  fuenteJuego = createFont("fuenteJuego.otf", 20);
-  textFont(fuenteJuego);
-  pantallaPrincipal();
-  tiempo=0;
+  fuenteJuego = createFont ("fuenteJuego.otf", 20);
+  textFont (fuenteJuego);
+  pantallaPrincipal ();
+  tiempo = 0;
 }
 
 void draw() {
-
+  println (mouseX,mouseY);
   if ((enter) && (limpiar)) {
     enJuego();
   }
@@ -48,7 +47,7 @@ void draw() {
     
     //MUESTRO EN PANTALLA QUE SE ACABO EL TIEMPO
     
-    pantallaFinalDeTiempo();
+    pantallaFinalDeTiempo (puntos);
 
     if (!limpiar) {
       limpiar=true;
