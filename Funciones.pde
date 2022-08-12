@@ -77,7 +77,7 @@ void pelotasIncorrectas() {
 
 //PANTALLA PERDISTE
 
-void pantallaPerdiste() {
+void pantallaPerdiste(int puntos) {
   background(0, 12, 37);
   fill(255);
   textAlign(CENTER, CENTER);
@@ -87,6 +87,7 @@ void pantallaPerdiste() {
   text("Tu puntaje fue de: "+ puntos + "\npelotas en: " + tiempo/60 + "¨", width/2, 40);
   textSize(15);
   text("PULSA ENTER \n PARA REINICIAR EL JUEGO", width/2, 420);
+  
   if (!limpiar) {
     limpiar=true;
   }
@@ -94,14 +95,14 @@ void pantallaPerdiste() {
 
 //PANTALLA FINAL DEL TIEMPO
 
-void pantallaFinalDeTiempo() {
+void pantallaFinalDeTiempo(int puntos) {
   background(0, 12, 37);
   fill(255);
   textSize(10);
   textAlign(CENTER, CENTER);
   text ("CREDITOS\nRealizado por: Joaquin De Vigo Urcos\nCOMISION 2°\nTecnologia Multimedial", width/2, 60);
   textSize(40);
-  text("¡SE TE ACABO\nEL TIEMPO!", width/2, height/2);
+  text("¡SE TE ACABÓ\nEL TIEMPO!", width/2, height/2);
   textSize(20);
   text("Tu puntaje fue: "+ puntos, width/2, 180);
   textSize(15);
@@ -109,9 +110,11 @@ void pantallaFinalDeTiempo() {
 }
 
 
+
+
 //CONTROL DE ACIERTOS Y FALLOS
 
-void mouseClicked() {
+void mousePressed() {
 
   //SI EL CLICK SE EFECTUA MIENTRAS SE INICIO EL JUEGO
 
@@ -163,7 +166,7 @@ void mouseClicked() {
 
       missClick++;
       if (missClick == 1) {
-        pantallaPerdiste();
+        pantallaPerdiste(puntos);
 
         //DEJO DE CONTAR EL TIEMP
 
